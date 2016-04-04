@@ -1,11 +1,5 @@
 <?php require_once 'crap.php'; ?>
 
-<head>
-  <title>textcrap</title>
-  <link rel="stylesheet" href="../main.css" type="text/css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
 <?php
 
 if ( isset ( $_GET['c'] ) ) {
@@ -27,6 +21,19 @@ if ( isset ( $_GET['c'] ) ) {
 
 ?>
 
+<?php if ( isset ( $_GET['plain'] ) )
+{
+	echo $crap['crap'];
+} else {
+	
+?>
+
+<head>
+  <title>textcrap</title>
+  <link rel="stylesheet" href="../main.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
 <center>
 
 	<br>
@@ -40,10 +47,14 @@ if ( isset ( $_GET['c'] ) ) {
 	<input type="text" value="<?php echo $crap['title']; ?>" DISABLED />
 	<textarea><?php echo $crap['crap']; ?></textarea>
 	
+	<br>
+	<a href="?plain=true">Plain text version</a>.
+	
 	<br><br><br><br><br><br><br><br>
 	Made with <3 by <a href="http://cammarata.info">Preston Cammarata</a><br>
 	<a href="http://github.com/aceriou/textcrap">GitHub Repository</a><br>
 	Made in Rhode Island.
 	
 </center>
+<?php } ?>
 
