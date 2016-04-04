@@ -16,7 +16,7 @@ if ( isset ( $_GET['c'] ) ) {
 }
 
 if ( isset ( $_GET['plain'] ) ) {
-	echo nl2br ( "<pre>" . $crap['crap'] . "</pre>" );
+	echo ( "<pre>" . $crap['crap'] . "</pre>" );
 } else {
 	
 ?>
