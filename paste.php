@@ -1,6 +1,4 @@
-<?php require_once 'crap.php'; ?>
-
-<?php
+<?php require_once 'crap.php';
 
 if ( isset ( $_GET['c'] ) ) {
 	$crap_id = doSafe ( $_GET['c'] );
@@ -17,13 +15,8 @@ if ( isset ( $_GET['c'] ) ) {
 	die ( 'An ID was not supplied.' );
 }
 
-
-
-?>
-
-<?php if ( isset ( $_GET['plain'] ) )
-{
-	echo nl2br ( $crap['crap'] );
+if ( isset ( $_GET['plain'] ) ) {
+	echo nl2br ( "<pre>" . $crap['crap'] . "</pre>" );
 } else {
 	
 ?>
