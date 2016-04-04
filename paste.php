@@ -23,7 +23,7 @@ if ( isset ( $_GET['c'] ) ) {
 
 <?php if ( isset ( $_GET['plain'] ) )
 {
-	echo $crap['crap'];
+	echo nl2br ( $crap['crap'] );
 } else {
 	
 ?>
