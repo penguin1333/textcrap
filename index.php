@@ -27,8 +27,8 @@
 		$crap   = doSafe ( $_POST['crap'] );
 		$title  = doSafe ( $_POST['title'] );
 		
-		if ( empty( $title ) || empty( $crap ) ) {
-			echo ( '<br><div class=notif>You did not enter the required fields!</div>' );
+		if ( $title < 5 || $crap < 15 ) {
+			echo ( '<br><div class=notif>Your required fields had too short content to post.</div>' );
 		} else {
 			$query  = mysqli_query ( db ( ), "INSERT INTO crap (url, crap, title, ip) VALUES ('" . $id . "', '" . $crap . "', '" . $title . "', '" . $_SERVER['REMOTE_ADDR'] . "')" );
 
