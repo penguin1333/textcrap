@@ -24,8 +24,8 @@
 		}
 
 		# Insert into the database
-		$crap   = doSafe ( $_POST['crap'] );
-		$title  = doSafe ( $_POST['title'] );
+		$crap   = trim ( doSafe ( $_POST['crap'] ) );
+		$title  = trim ( doSafe ( $_POST['title'] ) );
 		
 		if ( strlen ( $title ) < 2 || strlen ( $crap ) < 5 || strlen ( $title ) > 65535 || strlen ( $crap ) > 65535 ) {
 			echo ( '<br><div class=notif>Your required fields had too short content to post.</div>' );
