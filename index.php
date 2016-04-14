@@ -48,7 +48,7 @@
 	<br>
 
 	<form action="" method="post">
-		<input type="text" name="title" placeholder="Title of the crap">
+		<input type="text" name="title" placeholder="Title of the crap" autocomplete="off"t>
 		<textarea name="crap" placeholder="Enter some crap here..."></textarea><br>
 		<input type="submit" name="submit" value="Create">
 	</form>
