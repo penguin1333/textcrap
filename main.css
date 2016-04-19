@@ -1,112 +1,117 @@
 @import url("http://fonts.googleapis.com/css?family=Lato");
 * {
-  margin: 0;
-  padding: 0;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  padding: 20px;
-  text-align: left;
-  font-family: Lato;
-  color: #fff;
-  background: #34495e;
+    padding: 20px;
+    text-align: left;
+    font-family: Lato;
+    color: #fff;
+    background: #34495e;
 }
 
 h1 {
-  font-weight: normal;
-  font-size: 40px;
-  font-weight: normal;
-  margin: 20px 0;
+    font-weight: normal;
+    font-size: 40px;
+    font-weight: normal;
+    margin: 20px 0;
 }
 
 h1 span {
-  font-size: 13px;
-  display: block;
+    font-size: 13px;
+    display: block;
 }
 
 @media only screen and (max-width: 768px) {
   .notif {
-    width: 80%;
+      width: 80%;
   }
   input,
   textarea {
-    width: 80%;
+      width: 80%;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .notif {
-    width: 40%;
+      width: 40%;
   }
   input,
   textarea {
-    width: 40%;
+      width: 40%;
   }
 }
 
 .notif {
-  display: block;
-  clear: both;
-  margin-bottom: 10px;
-  padding: 15px 10px;
-  font-size: 14px;
-  outline: none;
-  border: none;
-  background-color: #2c3e50;
-  color: #aabed1;
+    display: block;
+    clear: both;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    background-color: #2c3e50;
+    color: #aabed1;
 }
 
 a {
-  color: #768491;
+    color: #768491;
 }
 
 input,
 textarea {
-  display: block;
-  clear: both;
-  margin-bottom: 10px;
-  padding: 15px 10px;
-  font-size: 14px;
-  outline: none;
-  border: none;
-  background-color: #2c3e50;
-  color: #aabed1;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: #476481;
-}
-
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  color: #476481;
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #476481;
+    display: block;
+    clear: both;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    background-color: #2c3e50;
+    color: #aabed1;
+  
 }
 
 input:hover,
 textarea:hover {
-  background-color: #233140;
-  color: #3e5871;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #476481;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #476481;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #476481;
+}
+
+input:hover,
+textarea:hover {
+    background-color: #233140;
+    color: #3e5871;
 }
 
 input:focus,
 textarea:focus {
-  background-color: #1a252f;
-  color: #507192;
+    background-color: #1a252f;
+    color: #507192;
 }
 
 textarea {
-  height: 150px;
+    height: 150px;
 }
