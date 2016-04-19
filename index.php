@@ -1,9 +1,10 @@
 <?php require_once 'crap.php'; ?>
 
 <head>
-  <title>textcrap</title>
-  <link rel="stylesheet" href="main.css" type="text/css">	
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>textcrap</title>
+  	<link rel="stylesheet" href="main.css" type="text/css">	
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <center>
@@ -48,13 +49,13 @@
 	<br>
 
 	<form action="" method="post">
-		<input type="text" name="title" placeholder="Title of the crap" autocomplete="off"t>
+		<input type="text" name="title" placeholder="Title of the crap" autocomplete="off">
 		<textarea name="crap" placeholder="Enter some crap here..."></textarea><br>
 		<input type="submit" name="submit" value="Create">
 	</form>
 	
 	<br><br><br><br><br>
-	Made with <3 by <a href="http://cammarata.info">Preston Cammarata</a><br>
+	Made with &hearts; by <a href="http://cammarata.info">Preston Cammarata</a><br>
 	<a href="http://github.com/aceriou/textcrap">GitHub Repository</a><br>
 	Made in Rhode Island.
 	
