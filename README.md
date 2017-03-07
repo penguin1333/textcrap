@@ -1,6 +1,8 @@
 # textcrap
 A dead simple text paste website similar to Pastebin, written entirely by Preston Cammarata
 
+This can be used as an example for starting up your own Pastebin-like site, or just scrap it for whatever.
+
 # Setting up
 Just copy the files to your server, create a database and name it whatever you want, run the "db.sql" file in the database to create the needed table for textcrap, then fill out the database credentials in crap.php.
 
